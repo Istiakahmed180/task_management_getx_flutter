@@ -1,10 +1,12 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:task_management/common/auth_controller.dart';
 import 'package:task_management/common/widgets/exit_confirmation_alert_dialog.dart';
 import 'package:task_management/config/routes/routes.dart';
 import 'package:task_management/constants/app_colors.dart';
+import 'package:task_management/screens/sign_in/controller/sign_in_controller.dart';
 
 class CommonAppBar extends StatefulWidget implements PreferredSizeWidget {
   const CommonAppBar({super.key});
@@ -83,6 +85,8 @@ class _CommonAppBarState extends State<CommonAppBar> {
         content: "Are you sure you want to logout of the application?",
         actionYes: () {
           _authController.clearSharedPreferenceData();
+          Get.delete<SignInController>();
+          Get.put(SignInController());
           Navigator.pushNamedAndRemoveUntil(
             context,
             Routes.signIn,
