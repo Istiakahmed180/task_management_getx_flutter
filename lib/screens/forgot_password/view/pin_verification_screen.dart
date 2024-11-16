@@ -13,7 +13,7 @@ class PinVerificationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final PinVerificationController controller =
-        Get.find<PinVerificationController>();
+        Get.put(PinVerificationController());
     TextTheme textTheme = Theme.of(context).textTheme;
 
     return AppBackground(

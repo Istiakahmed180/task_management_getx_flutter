@@ -15,7 +15,7 @@ class SignInScreen extends StatefulWidget {
 }
 
 class _SignInScreenState extends State<SignInScreen> {
-  final SignInController signInController = Get.find<SignInController>();
+  final SignInController signInController = Get.put(SignInController());
   final formKey = GlobalKey<FormState>();
 
   @override

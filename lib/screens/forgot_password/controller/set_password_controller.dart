@@ -11,9 +11,9 @@ import 'package:task_management/screens/forgot_password/controller/pin_verificat
 
 class SetPasswordController extends GetxController {
   final EmailAddressController emailAddressController =
-      Get.find<EmailAddressController>();
+      Get.put(EmailAddressController());
   final PinVerificationController pinVerificationController =
-      Get.find<PinVerificationController>();
+      Get.put(PinVerificationController());
   final passwordController = TextEditingController();
   final confirmPasswordController = TextEditingController();
   final isProgress = false.obs;

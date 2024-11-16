@@ -9,7 +9,7 @@ import 'package:task_management/screens/forgot_password/controller/email_address
 
 class PinVerificationController extends GetxController {
   final EmailAddressController emailAddressController =
-      Get.find<EmailAddressController>();
+      Get.put(EmailAddressController());
   final TextEditingController otpController = TextEditingController();
 
   var isProgress = false.obs;

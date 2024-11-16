@@ -13,7 +13,7 @@ class SetPasswordScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final SetPasswordController setPasswordController =
-        Get.find<SetPasswordController>();
+        Get.put(SetPasswordController());
     final formKey = GlobalKey<FormState>();
     TextTheme textTheme = Theme.of(context).textTheme;
 

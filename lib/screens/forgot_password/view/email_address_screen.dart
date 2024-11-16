@@ -16,7 +16,7 @@ class EmailAddressScreen extends StatefulWidget {
 
 class _EmailAddressScreenState extends State<EmailAddressScreen> {
   final EmailAddressController emailAddressController =
-      Get.find<EmailAddressController>();
+      Get.put(EmailAddressController());
   final formKey = GlobalKey<FormState>();
 
   @override

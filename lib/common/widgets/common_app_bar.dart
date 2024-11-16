@@ -8,13 +8,14 @@ import 'package:task_management/constants/app_colors.dart';
 class CommonAppBar extends StatelessWidget implements PreferredSizeWidget {
   CommonAppBar({super.key});
 
-  final CommonAppBarController controller = Get.find<CommonAppBarController>();
+  final CommonAppBarController controller = Get.put(CommonAppBarController());
 
   @override
   Size get preferredSize => const Size.fromHeight(kToolbarHeight + 20);
 
   @override
   Widget build(BuildContext context) {
+    print("Full Name : ${controller.fullName}");
     TextTheme textTheme = Theme.of(context).textTheme;
     return AppBar(
       automaticallyImplyLeading: false,

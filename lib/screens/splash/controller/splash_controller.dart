@@ -3,7 +3,7 @@ import 'package:task_management/common/controller/auth_controller.dart';
 import 'package:task_management/config/routes/routes.dart';
 
 class SplashController extends GetxController {
-  final AuthController _authController = Get.find<AuthController>();
+  final AuthController _authController = Get.put(AuthController());
 
   @override
   void onInit() {

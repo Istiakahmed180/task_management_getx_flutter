@@ -10,7 +10,7 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Get.find<SplashController>();
+    Get.put(SplashController());
 
     return AppBackground(
       child: Center(

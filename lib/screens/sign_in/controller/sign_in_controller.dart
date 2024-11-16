@@ -10,7 +10,7 @@ import 'package:task_management/network/network_response.dart';
 import 'package:task_management/network/network_service.dart';
 
 class SignInController extends GetxController {
-  final AuthController authController = Get.find<AuthController>();
+  final AuthController authController = Get.put(AuthController());
 
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
