@@ -30,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
         return _showExitConfirmationAlertDialog(context);
       },
       child: Scaffold(
-        appBar: const CommonAppBar(),
+        appBar: CommonAppBar(),
         bottomNavigationBar: _buildNavigationBar(),
         body: pages[currentIndex],
       ),

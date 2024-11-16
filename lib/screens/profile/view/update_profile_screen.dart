@@ -124,7 +124,7 @@ class _UpdateProfileScreenState extends State<UpdateProfileScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      appBar: const CommonAppBar(),
+      appBar: CommonAppBar(),
       body: AppBackground(
         child: Visibility(
           visible: !_isProgress,

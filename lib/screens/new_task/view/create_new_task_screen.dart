@@ -50,7 +50,7 @@ class _CreateNewTaskScreenState extends State<CreateNewTaskScreen> {
 
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      appBar: const CommonAppBar(),
+      appBar: CommonAppBar(),
       body: AppBackground(
         child: SingleChildScrollView(
           reverse: true,

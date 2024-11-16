@@ -1,6 +1,7 @@
 // BindingController
 import 'package:get/get.dart';
 import 'package:task_management/common/controller/auth_controller.dart';
+import 'package:task_management/common/controller/common_app_bar_controller.dart';
 import 'package:task_management/screens/forgot_password/controller/email_address_controller.dart';
 import 'package:task_management/screens/forgot_password/controller/pin_verification_controller.dart';
 import 'package:task_management/screens/forgot_password/controller/set_password_controller.dart';
@@ -18,5 +19,6 @@ class BindingController extends Bindings {
     Get.put(EmailAddressController());
     Get.put(PinVerificationController());
     Get.put(SetPasswordController());
+    Get.put(CommonAppBarController());
   }
 }
